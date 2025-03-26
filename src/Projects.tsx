@@ -21,10 +21,10 @@ const Projects = ({ theme }: ProjectsProps) => {
     const [projects, setProjects] = useState<Project[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const bUrl=import.meta.env.VITE_BACKEND_URL;
+    //const bUrl=import.meta.env.VITE_BACKEND_URL;
 
     useEffect(() => {
-        fetch(`${bUrl}/projects`) // API endpoint
+        fetch(`https://portfoliobackend-production-ed44.up.railway.app/projects`) // API endpoint
             .then((res) => res.json())
             .then((data) => {
                 if (Array.isArray(data)) {

@@ -1,0 +1,90 @@
+/* Default styles for larger screens are already set in Tailwind. Now, let's add media queries for responsiveness. */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.main-content {
+  padding-top: 60px; /* Adjust to prevent overlap */
+}
+
+
+
+
+/* Small Screens (max-width: 640px) */
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    padding: 8px 0;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer div {
+    margin-top: 10px;
+  }
+  
+  .footer-icons {
+    justify-content: center;
+  }
+}
+
+/* Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 30px;
+  }
+
+  .home-title {
+    font-size: 1.5rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .project-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/* Large Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+/* Extra Large Screens (max-width: 1280px) */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 90%;
+  }
+}
+

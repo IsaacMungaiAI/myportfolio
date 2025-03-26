@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+.turbo/
+.next/
+.vercel/
+dist/
+.cache/
+.parcel-cache/
+.yarn/
+.pnp.*
+.DS_Store
+*.log
+*.lock
+.env
+.env.local

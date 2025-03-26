@@ -27,10 +27,10 @@ const Contact = ({theme}: ContactProps) => {
 
         try {
             const response = await emailjs.send(
-                import.meta.env.VITE_SERVICE_ID, // Replace with your EmailJS service ID
-                import.meta.env.VITE_TEMPLATE_ID, // Replace with your EmailJS template ID
+                "service_37w2n36", // Replace with your EmailJS service ID
+                "template_jrcxy49", // Replace with your EmailJS template ID
                 formData,
-                import.meta.env.VITE_PUBLIC_KEY // Replace with your EmailJS public key
+                "-w4JXGwRZpnvSdUIw" // Replace with your EmailJS public key
             );
 
             if (response.status === 200) {

@@ -24,7 +24,7 @@ const Projects = ({ theme }: ProjectsProps) => {
     //const bUrl=import.meta.env.VITE_BACKEND_URL;
 
     useEffect(() => {
-        fetch(`https://portfoliobackend-production-ed44.up.railway.app/projects`) // API endpoint
+        fetch("https://portfoliobackend-production-ed44.up.railway.app/projects") // API endpoint
             .then((res) => res.json())
             .then((data) => {
                 if (Array.isArray(data)) {

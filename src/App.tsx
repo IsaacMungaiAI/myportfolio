@@ -48,7 +48,7 @@ function App() {
              <a href="https://instagram.com/yc33.mungai_" target="_blank" rel="noopener noreferrer">
                <Instagram className="h-6 w-6 hover:text-pink-500 transition" />
              </a>
-             <a href="https://wa.me/0103273776" target="_blank" rel="noopener noreferrer">
+             <a href="https://wa.me/+254103273776" target="_blank" rel="noopener noreferrer">
                <Phone className="h-6 w-6 hover:text-green-500 transition" />
              </a>
              <a href="https://linkedin.com/in/isaac-mbugua-423ba734a" target="_blank" rel="noopener noreferrer">
